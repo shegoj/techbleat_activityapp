@@ -1,0 +1,30 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+	http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.techbleat</groupId>
+	<artifactId>techbleat</artifactId>
+	<packaging>war</packaging>
+	<version>1.0</version>
+	<name>Techbleat Maven Webapp</name>
+	<url>http://maven.apache.org</url>
+
+	<build>
+		<finalName>TechbleatApp</finalName>
+
+		<plugins>
+		  <!-- For Maven Tomcat Plugin -->
+		  <plugin>
+			<groupId>org.apache.tomcat.maven</groupId>
+			<artifactId>tomcat7-maven-plugin</artifactId>
+			<version>2.2</version>
+			<configuration>
+				<path>/TechbleatApp</path>
+			</configuration>
+		  </plugin>
+
+		</plugins>
+
+	</build>
+</project>
