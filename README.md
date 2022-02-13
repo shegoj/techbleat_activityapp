@@ -12,6 +12,7 @@
 ```
 git clone https://github.com/shegoj/techbleat_activityapp
 cd techbleat_activityapp
+export JAVA_HOME=/etc/alternatives/java_sdk_1.8.0
 mvn clean package 
 sudo cp target/TechbleatApp.war  /usr/share/tomcat/webapps/
 ```
@@ -20,6 +21,7 @@ sudo cp target/TechbleatApp.war  /usr/share/tomcat/webapps/
 ```
 curl localhost:8080/TechbleatApp/index.jsp
 ```
+
 ### result 
 ```<html>
 <head><title>Hello World</title></head>
@@ -35,6 +37,12 @@ Your IP address is 127.0.0.1
 
 </body>
 </html>
+```
+
+if you encounter an error, you may need to start Tomcat service 
+
+```
+sudo systemctl start tomcat.service
 ```
 
 
